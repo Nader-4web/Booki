@@ -403,10 +403,10 @@ nav ul{
 }
 
 nav ul li a:hover{
-    padding-top: 41px;
-    border-top: 5px solid #0065FC;
+    padding-top: 40.5px;
+    border-top: 3px solid #0065FC;
     color: #0065FC;
-    cursor:default;
+    cursor:pointer;
     /* width: 100px; */
 
 }
@@ -472,7 +472,11 @@ form :focus{
     font-size: 18px;
     text-align: center;
     border: none;
+    cursor: pointer;
+}
 
+.button:hover{
+  background-color: #0055d4;
 }
 
 .search{
@@ -480,9 +484,10 @@ form :focus{
     border-left: 0;
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
+    padding-inline-start: 10px;
   
 }
 
@@ -502,7 +507,7 @@ flex-wrap: wrap;
 }
 
 ::placeholder{
-  color: black;
+  color: #97A5BF;
 }
 
 
@@ -715,6 +720,8 @@ line-height: 19px;
     letter-spacing: 0em;
     text-align: left;
     margin-left: 40px;
+    margin: 15px 40px;
+    display: block;
 }
 
 #section2{
@@ -851,8 +858,6 @@ bottom: 12px;
   display: flex;
   gap: 35px;
   width: 100%;
-
-
 }
 
 
@@ -861,7 +866,7 @@ bottom: 12px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 20px;
-   
+    /* min-width: 200px;    */
 }
 
 .activites:hover{
@@ -885,6 +890,7 @@ bottom: 12px;
     letter-spacing: 0em;
     text-align: left;
     margin-left: 19px;
+    padding-bottom: 20px;
 }
 
 .p-activites-long{
@@ -949,7 +955,6 @@ color: inherit;
 hr{
   display: none;
 }
-
 
 
                     /* .............................FORMAT TABLETTE.......................... */
@@ -1051,6 +1056,9 @@ hr{
   .imgactivites{
     height:211px;
   }
+  .activites{
+    min-width: inherit;
+  }
 
   .p-activites{
     width: 140px;
@@ -1079,12 +1087,9 @@ hr{
     margin-left: 70px;
     margin-top: 45px;
     
+  }
+
 }
-
-
-}
-
-                          /* .............................FORMAT TABLETTE.......................... */
 
 
 
@@ -1183,6 +1188,7 @@ h1{
 
 #rechercher{
   display: none;
+  cursor: pointer;
 } 
 
 #loupe{
@@ -1319,7 +1325,6 @@ width: 100%;
 #contenant-img{
   display: flex;
   flex-direction: column;
-
 }
 
 
